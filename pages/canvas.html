@@ -1,25 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Canvas test</title>
 </head>
+
 <body>
-    <canvas id="myCanvas" width="200" height="100" style="border: 1px solid #000000;">
-
-
-    </canvas>
+    <canvas id="myCanvas" width="200" height="100" style="border: 1px solid #000000;"></canvas>
     <script>
         let c = document.getElementById("myCanvas");
         let ctx = c.getContext("2d");
-        ctx.moveTo(0,0);
-        ctx.lineTo(200,100);
+        ctx.moveTo(0, 0);
+        ctx.lineTo(200, 100);
         ctx.stroke();
         ctx.font = "35px Arial";
         //ctx.fillText("Hello World", 10, 60);
         ctx.strokeText("Hello world", 10, 60);
         ctx.Text("Hello World", 10, 60);
     </script>
+
+    <img id="slika" src="../resources/images/image1.jpg" alt="Gramophone" width="800px" hidden>
+
+    <p>Canvas:</p>
+    <canvas id="platno" width="1000" height="1000" style="border:1px solid #d3d3d3;">Your browser does not support the HTML5 canvas tag.</canvas>
+
+    <script> // radi samo unutar: window.onload
+        window.onload = function() {
+            let c = document.getElementById("platno");
+            let ctx = c.getContext("2d");
+            let img = document.getElementById("slika");
+            ctx.drawImage(img, 0, 0);
+        }
+    </script>
 </body>
+
 </html>
