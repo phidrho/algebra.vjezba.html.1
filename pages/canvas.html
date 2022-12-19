@@ -24,6 +24,7 @@
     <img id="slika" src="../resources/images/image1.jpg" alt="Gramophone" width="800px" hidden>
 
     <p>Canvas:</p>
+    <p>Možemo dodati svašta iznad slike, bilo što što želimo a da canvas podržava.</p>
     <canvas id="platno" width="1000" height="1000" style="border:1px solid #d3d3d3;">Your browser does not support the HTML5 canvas tag.</canvas>
 
     <script> // radi samo unutar: window.onload
@@ -32,6 +33,8 @@
             let ctx = c.getContext("2d");
             let img = document.getElementById("slika");
             ctx.drawImage(img, 0, 0);
+            ctx.font = "50px Arial";
+            ctx.fillText("Gramofon", 500, 60);
         }
     </script>
 </body>
