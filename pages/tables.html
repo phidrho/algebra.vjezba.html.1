@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Web stranica za tvrtku Firmica">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moja firma - Firmica</title>
+</head>
+
+<body style="max-width: 900px; margin:auto;">
+    <header>
+        <h1>Tablice s okvirima</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Naslovna</a></li>
+                <li><a href="usluge.html">Usluge</a></li>
+                <li><a href="o_nama.html">O nama</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="media.html">Mediji</a></li>
+                <li><a href="#">Tablice</a></li>
+                <li><a href="tables_github.html">Tablice GitHub Branch</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <main>
+        <h2>Drugi stupac zauzima 70% širine tablice</h2>
+        <table style="width:100%;">
+            <thead>
+                <tr>
+                    <th>Ime</th>
+                    <th style="width:70%;">Prezime</th>
+                    <th>Godine</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Marko</td>
+                    <td>Marković</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>Ivana</td>
+                    <td>Ivić - Marković</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>50</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>Podnožje 1</th>
+                    <th>Podnožje 2</th>
+                    <th>Podnožje 3</th>
+                </tr>
+            </tfoot>
+        </table>
+        <br>
+        <h2>Vertikalni naslovi u tablici</h2>
+        <table style="width:100%;">
+            <tbody>
+                <tr>
+                    <th>Ime</th>
+                    <td>Marko</td>
+                    <td>Ivana</td>
+                    <td>John</td>
+                </tr>
+                <tr>
+                    <th>Prezime</th>
+                    <td>Marković</td>
+                    <td>Ivić - Marković</td>
+                    <td>Doe</td>
+                </tr>
+                <tr>
+                    <th>Godine</th>
+                    <td>20</td>
+                    <td>22</td>
+                    <td>50</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <h2>Stupac koji se proteže kroz 3 retka</h2>
+        <table style="width:100%;">
+            <tbody>
+                <tr>
+                    <td rowspan="3" width="160">PRVI STUPAC</td>
+                    <td width="160">Prvi redak</td>
+                </tr>
+                <tr>
+                    <td>Drugi redak</td>
+                </tr>
+                <tr>
+                    <td>Treći redak</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <h2>Redak koji se proteže kroz 3 stupca</h2>
+        <table style="width:100%;">
+            <tbody>
+                <tr>
+                    <td colspan="3" width="320">PRVI REDAK</td>
+                </tr>
+                <tr>
+                    <td>Prvi stupac 2. red</td>
+                    <td>Drugi stupac 2. red</td>
+                    <td>Treći stupac 2. red</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <h2>Složena tablica - primjer 1</h2>
+        <table style="width:100%;">
+            <tbody>
+                <tr>
+                    <td>stupac 1</td>
+                    <td>stupac 2</td>
+                    <td>stupac 3</td>
+                    <td>stupac 4</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td colspan="3">6</td>
+                </tr>
+                <tr>
+                    <td colspan="2">7</td>
+                    <td>8</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td colspan="3">10</td>
+                    <td>11</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Složena tablica - primjer 2</h2>
+        <table style="width:100%;">
+            <tbody>
+                <tr>
+                    <td rowspan="3">stupac 1</td>
+                    <td rowspan="2">stupac 2</td>
+                    <td>stupac 3</td>
+                    <td>stupac 4</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">5</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>8</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+
+</html>
