@@ -10,7 +10,7 @@
 
 <body style="max-width: 900px; margin:auto;">
     <header>
-        <h1>O nama</h1>
+        <h1>Obrasci - vježba na Git Branchu - "implementacija_obrasca"</h1>
         <nav>
             <ul>
                 <li><a href="../index.html">Naslovna</a></li>
@@ -33,9 +33,55 @@
             fugiat et? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis nulla saepe id iste quaerat
             possimus illum, quia ut velit quasi commodi dolorum atque voluptates, beatae qui facilis voluptate! Tempora,
             est.</p>
-            <form action="" name="prijava" method="post" enctype="multipart/form-data" autocomplete="on">
-                
-            </form>
+        <form action="" name="prijava" method="post" enctype="multipart/form-data" autocomplete="on">
+            <p>
+                <label for="ime">Ime i prezime *</label>
+                <br>
+                <input type="text" id="ime" name="ime" required placeholder="Vaše ime i prezime">
+            </p>
+            <p>
+                <label for="email">Email *</label>
+                <br>
+                <input type="text" id="email" name="email" required placeholder="Upišite valjanu e-mail adresu">
+            </p>
+            <p>
+                <label for="telefon">Kontakt broj telefona</label>
+                <br>
+                <input type="tel" id="telefon" name="telefon" required placeholder="Upišite broj telefona">
+            </p>
+            <p>
+                <label for="datum">Datum rođenja *</label>
+                <br>
+                <input type="date" id="datum" name="datum" required>
+            </p>
+            <p>
+                <label for="jezik">Koje jezike govorite?</label>
+                <br>
+                <p id="jezik">
+                    Engleski <input type="checkbox" name="engleski">
+                    Talijanski <input type="checkbox" name="talijanski">
+                    Njemački <input type="checkbox" name="njemacki">
+                    Francuski <input type="checkbox" name="francuski">
+                    Španjolski <input type="checkbox" name="spanjolski">
+                </p>
+            </p>
+            <p>
+                <label for="usluge">Da li ste do sada koristili usluge naše tvrtke?</label>
+                <p id="usluge">
+                    Da <input type="radio" name="usluga" id="usluge">
+                    Ne <input type="radio" name="usluga" id="usluge">
+                </p>
+            </p>
+            <p>
+                <label for="cv">Priložite životopis</label>
+                <br><input type="file" name="cv" id="cv" required>
+            </p>
+            <p>
+                <input type="reset" id="reset_btn" value="Poništi">
+                <input type="submit" id="submit_btn" value="Prijavi se">
+            </p>
+            </p>
+        </form>
 
     </main>
     <br>
