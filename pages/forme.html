@@ -32,7 +32,59 @@
             fugiat et? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis nulla saepe id iste quaerat
             possimus illum, quia ut velit quasi commodi dolorum atque voluptates, beatae qui facilis voluptate! Tempora,
             est.</p>
-            <textarea cols="30" rows="10">Ovdje možemo upisivati text</textarea>
+        <textarea cols="30" rows="10">Ovdje možemo upisivati text</textarea>
+        <h2>Prva forma - text</h2>
+        <p>Naslov forme</p>
+        <form action="">Ime: <input type="text" name="ime"><br>
+            Prezime: <input type="text" name="prezime">
+        </form>
+
+        <h2>Druga forma - checkbox</h2>
+        <p>Naslov forme</p>
+        <form action="">
+            <h3>Volim jesti</h3>
+
+            Jabuke <input type="checkbox" name="voce" id="" value="Jabuke"><br>
+            Kruške <input type="checkbox" name="voce" id="" value="Kruške" checked><br>
+            Marelice <input type="checkbox" name="voce" id="" value="Marelice">
+        </form>
+
+        <h2>Treća forma - radio</h2>
+        <p>Naslov forme</p>
+        <form action="">
+            <h3>Odaberi spol</h3>
+            <input type="radio" name="spol" id="" value="muško" checked> Muško
+            <br><input type="radio" name="spol" id="" value="žensko"> Žensko
+        </form>
+
+        <h2>Četvrta forma - button</h2>
+        <p>Naslov forme</p>
+        <form action="">
+            <h3>Klikni na OK</h3>
+            <input type="button" value="OK">
+            <input type="button" value="Cancel">
+        </form>
+
+        <h2>Peta forma - submit</h2>
+        <p>Naslov forme</p>
+        <form action="">
+            <h3>Submit šalje podatke iz forme na lokaciju koja je navedena u "actionu" parametru od forme</h3>
+            Korisničko ime: <input type="text" name="user">
+            <br><input type="submit" value="Submit button">
+        </form>
+
+        <h2>Šesta forma - drop down</h2>
+        <p>Select</p>
+        <form action="">
+            <h3>Za drop down opcije koristimo "select>option"</h3>
+            Dropdown:
+            <br><select name="boje">
+                <option value="plava">plava</option>
+                <option value="žuta">žuta</option>
+                <option value="zelena">zelena</option>
+                <option value="crvena">crvena</option>
+            </select>
+        </form>
     </main>
     <br>
     <footer><strong>Kopirajt 2022</strong></footer>
